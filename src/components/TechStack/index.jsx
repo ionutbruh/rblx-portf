@@ -1,5 +1,7 @@
 import React from 'react';
-import icons from './icons';
+import Card from './Card';
+
+import card_data from "./card_data"
 
 function TechStack() {
     return (
@@ -9,10 +11,10 @@ function TechStack() {
                     <h1 className="font-vhs text-3xl"> 0.1 My Tech Stack</h1>
                 </div>
 
-                <div className="flex space-between space-x-10">
+                <div className="flex space-between space-x-10 p-4">
                     {
-                        icons.map((icon, index) => (
-                            <img key={index} width={100} height={100} src={icon} alt={`Icon ${index}`} />
+                        card_data.map((icon, index) => (
+                            <Card icon={icon} title={"css"} description={"css"}/>
                         ))
                     }
                 </div>

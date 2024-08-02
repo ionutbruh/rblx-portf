@@ -1,45 +1,54 @@
-import { useRef } from "react";
-import { useEffect } from "react";
-
+import { useRef, useEffect } from "react";
 import Typewriter from 'typewriter-effect/dist/core';
 import anime from "animejs";
 
 function Header() {
+    const typewriterTextRef = useRef();
 
-    const typewriter_text = useRef();
     useEffect(() => {
-        new Typewriter(typewriter_text.current, {
+        // Initialize Typewriter effect
+        new Typewriter(typewriterTextRef.current, {
             strings: [
-                'a Roblox Developer.',
-                'a Web Developer.',
-                'a Freelancer.',
-                'a Problem-Solver.',
+                'Roblox Developer.',
+                'Web Developer.',
+                'Freelancer.',
+                'Problem-Solver.',
             ],
             autoStart: true,
             loop: true
         });
-    }, [])
 
-    return (<>
+        // Initialize Anime.js animation for the neon effect
+        anime({
+            targets: typewriterTextRef.current,
+            textShadow: [
+                '0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px rgb(33, 150, 243), 0 0 12px rgb(33, 150, 243), 0 0 16px rgb(33, 150, 243), 0 0 20px rgb(33, 150, 243)',
+                '0 0 4px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px rgb(33, 150, 243), 0 0 24px rgb(33, 150, 243), 0 0 32px rgb(33, 150, 243), 0 0 40px rgb(33, 150, 243)',
+            ],
+            duration: 2000,
+            easing: 'easeInOutQuad',
+            direction: 'alternate',
+            loop: true
+        });
+    }, []);
+
+    return (
         <div className="w-full flex flex-col items-center space-y-5 bg-black p-20">
-
             <div className="flex flex-col items-start space-y-3 text-white w-full">
                 <p className="font-caviar text-xs">Hi, my name is</p>
                 <h1 className="font-vhs text-6xl">Andrei Dev.</h1>
-                <div className="flex items-start text-white space-x-3">
-                    <h1 className="font-vhs text-6xl">I am</h1>
-                    <h1 ref={typewriter_text} className="font-vhs text-6xl">.</h1>
+                <div className="flex items-start text-white space-x-4">
+                    <h1 className="font-vhs text-6xl">I am a</h1>
+                    <h1 ref={typewriterTextRef} className="font-vhs text-6xl neon-base">.</h1>
                 </div>
             </div>
-
             <div className="flex justify-start">
                 <p className="w-1/3 font-caviar text-sm text-white">
                     Velit do cillum sunt culpa. Velit anim velit laborum nostrud voluptate voluptate Lorem voluptate sit. Voluptate est aliqua laborum tempor laboris consectetur incididunt reprehenderit ullamco sint. Ea id incididunt consectetur aute est ad nulla eiusmod. Nulla mollit tempor amet pariatur. Fugiat reprehenderit pariatur aute velit ea sit anim ad est aliqua cillum exercitation sit. Sint consectetur non nulla officia duis.
                 </p>
             </div>
-
         </div>
-    </>);
+    );
 }
 
 export default Header;
