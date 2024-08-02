@@ -2,6 +2,8 @@ import { useRef, useEffect } from "react";
 import Typewriter from 'typewriter-effect/dist/core';
 import anime from "animejs";
 
+import Pfp from "./Pfp";
+
 function Header() {
     const typewriterTextRef = useRef();
 
