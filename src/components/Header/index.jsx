@@ -22,8 +22,8 @@ function Header() {
         anime({
             targets: typewriterTextRef.current,
             textShadow: [
-                '0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px rgb(33, 150, 243), 0 0 12px rgb(33, 150, 243), 0 0 16px rgb(33, 150, 243), 0 0 20px rgb(33, 150, 243)',
-                '0 0 4px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px rgb(33, 150, 243), 0 0 24px rgb(33, 150, 243), 0 0 32px rgb(33, 150, 243), 0 0 40px rgb(33, 150, 243)',
+                '0 0 2px #fff, 0 0 4px #fff, 0 0 6px #7592A1, 0 0 8px #7592A1, 0 0 12px #7592A1, 0 0 16px #7592A1, 0 0 20px #7592A1',
+                '0 0 4px #fff, 0 0 8px #fff, 0 0 12px #7592A1, 0 0 16px #7592A1, 0 0 24px #7592A1, 0 0 32px #7592A1, 0 0 40px #7592A1',
             ],
             duration: 2000,
             easing: 'easeInOutQuad',
@@ -33,13 +33,13 @@ function Header() {
     }, []);
 
     return (
-        <div className="w-full flex flex-col items-center space-y-5 bg-black p-20">
+        <div className="w-full flex flex-col items-center space-y-5 bg-background p-20">
             <div className="flex flex-col items-start space-y-3 text-white w-full">
-                <p className="font-caviar text-xs">Hi, my name is</p>
+                <p className="font-caviar text-xs ">Hi, my name is</p>
                 <h1 className="font-vhs text-6xl">Andrei Dev.</h1>
                 <div className="flex items-start text-white space-x-4">
                     <h1 className="font-vhs text-6xl">I am a</h1>
-                    <h1 ref={typewriterTextRef} className="font-vhs text-6xl neon-base">.</h1>
+                    <h1 ref={typewriterTextRef} className="font-vhs text-6xl neon-accent">.</h1>
                 </div>
             </div>
             <div className="flex justify-start">

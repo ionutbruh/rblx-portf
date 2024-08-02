@@ -1,11 +1,10 @@
-.neon-base {
+.neon-accent {
     color: #fff;
     text-shadow:
-        0 0 2px #fff,          /* Reduced white shadow intensity */
-        0 0 4px #fff,          /* Reduced white shadow intensity */
-        0 0 6px rgb(33, 150, 243), /* Reduced blue shadow intensity */
-        0 0 10px rgb(33, 150, 243), /* Reduced blue shadow intensity */
-        0 0 15px rgb(33, 150, 243), /* Reduced blue shadow intensity */
-        0 0 20px rgb(33, 150, 243); /* Reduced blue shadow intensity */
+        0 0 2px #fff,          /* White shadow */
+        0 0 4px #fff,          /* White shadow */
+        0 0 6px #7592A1,      /* New accent color shadow */
+        0 0 10px #7592A1,     /* New accent color shadow */
+        0 0 15px #7592A1,     /* New accent color shadow */
+        0 0 20px #7592A1;     /* New accent color shadow */
 }
-

@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Card({ icon, title }) {
+function Card({src, title }) {
     return (
-        <div className="flex flex-col bg-black p-4 items-center">
-            <svg className='w-20 h-20' src={icon} alt="" />
-            <p className=''>213</p>
+        <div className="flex flex-col items-center p-2">
+            <img className='w-20 h-20' src={src} alt="" />
+            <p className='font-vhs'>{title}</p>
         </div>
     );
 }
