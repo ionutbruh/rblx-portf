@@ -7,13 +7,13 @@ import nodejs from "./node-js-brands-solid.svg"
 import tw from "./wind-solid.svg"
 
 const icons = [
-    {src:html,title:"Html"},
-    {src:css,title:"Css"},
-    {src:js,title:"Javascript"},
-    {src:nodejs,title:"NodeJs"},
-    {src:react,title:"React"},
-    {src:tw,title:"TailwindCSS"},
-    {src:lua,title:"Lua"},
+    {svg:html,title:"Html"},
+    {svg:css,title:"Css"},
+    {svg:js,title:"Javascript"},
+    {svg:nodejs,title:"NodeJs"},
+    {svg:react,title:"React"},
+    {svg:tw,title:"TailwindCSS"},
+    {svg:lua,title:"Lua"},
 ];
 
 export default icons;

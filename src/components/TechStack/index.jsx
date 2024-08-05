@@ -2,16 +2,16 @@ import Card from './Card';
 import card_data from "./card_data";
 
 function TechStack() {
- 
+
     return (
         <div className='bg-primary'>
-            <div className="flex flex-wrap justify-center p-8 space-x-14">
+            <div className="flex flex-wrap justify-center p-8 gap-16 gap-y-4">
                 {
                     card_data.map((data, index) => (
                         <Card
                             className="ts-card"
                             key={index}
-                            src={data.src}
+                            svg={data.svg}
                             title={data.title}
                         />
                     ))
@@ -19,6 +19,7 @@ function TechStack() {
             </div>
         </div>
     );
+
 }
 
 export default TechStack;

@@ -1,7 +1,6 @@
-import Header from "./components/Header"
-import TechStack from "./components/TechStack"
-
-import "./assets/styles/neon.css";
+import Header from "src/components/Header"
+import TechStack from "src/components/TechStack"
+import "src/assets/styles/neon.css";
 
 
 function App() {

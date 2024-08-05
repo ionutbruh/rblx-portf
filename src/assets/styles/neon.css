@@ -11,12 +11,11 @@
 
 .neon-box {
     color: #fff;
+    border: 2px solid #ffffff;  /* Add a border with the accent color */
     box-shadow:
-        0 0 2px #fff,          /* White shadow */
-        0 0 4px #fff,          /* White shadow */
-        0 0 6px #7592A1,      /* New accent color shadow */
-        0 0 10px #7592A1,     /* New accent color shadow */
-        0 0 15px #7592A1,     /* New accent color shadow */
-        0 0 20px #7592A1;     /* New accent color shadow */
+        0 0 5px #fff,          /* Increase white shadow size */
+        0 0 10px #fff,         /* Increase white shadow size */
+        0 0 20px #7592A1,      /* Increase new accent color shadow size */
+        0 0 30px #7592A1,      /* Increase new accent color shadow size */
+        0 0 40px #7592A1     /* Increase new accent color shadow size */
 }
-
