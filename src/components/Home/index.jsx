@@ -40,7 +40,7 @@ function Header() {
                     </p>
                 </div>
 
-                <div className="flex justify-between gap-4 text-lg">
+                <div className="flex flex-wrap justify-between gap-4 text-lg">
                     <Button text="My work" />
                     <Button text="Discord" />
                 </div>
