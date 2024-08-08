@@ -8,5 +8,5 @@ export default defineConfig({
       src: "/src",
     },
   },
-  server: {port : 443}
+  base: "/vite-deploy/"
 });
