@@ -11,12 +11,12 @@ export default {
         vhs: ["Easvhs"]
       },
       colors: {
-        'text': '#eeede6',
-        'background': '#181610',
-        'primary': '#c2bba6',
-        'secondary': '#446457',
-        'accent': '#7592a1',
-       },       
+        'text': '#d7d7d2',         
+        'background': '#12100d',   
+        'primary': '#8c8475',      
+        'secondary': '#5a6e63',    
+        'accent': '#7a8e98',       
+      },    
     },
   },
   plugins: [],
