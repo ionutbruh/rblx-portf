@@ -6,17 +6,18 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily:{
+      fontFamily: {
         caviar: ["CaviarDreams"],
         vhs: ["Easvhs"]
       },
       colors: {
-        'text': '#d7d7d2',         
-        'background': '#12100d',   
-        'primary': '#8c8475',      
-        'secondary': '#5a6e63',    
-        'accent': '#7a8e98',       
-      },    
+        'text': '#ecedf0',
+        'background': '#08080a',
+        'primary': '#b2b4c3',
+        'secondary': '#51495e',
+        'accent': '#91809d',
+      },
+
     },
   },
   plugins: [],
